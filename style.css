@@ -8,7 +8,7 @@ body {
     margin: 0px;
 }
 
-.navbar ul {
+.topnavbar ul {
     list-style-type: none;
     background-color: rgb(39, 39, 39);
     padding: 0px;
@@ -16,7 +16,7 @@ body {
     overflow: hidden;
 }
 
-.navbar a {
+.topnavbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -24,11 +24,11 @@ body {
     text-align: center;
 }
 
-.navbar a:hover {
+.topnavbar a:hover {
     background-color: black;
 
 }
 
-.navbar li {
+.topnavbar li {
     float: left;
 }
