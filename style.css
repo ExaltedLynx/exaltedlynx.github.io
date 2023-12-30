@@ -1,6 +1,5 @@
 body {
     background-image: url('Images/background.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
