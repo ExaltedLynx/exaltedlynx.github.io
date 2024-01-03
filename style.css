@@ -3,7 +3,9 @@ body {
     background-size: cover;
     background-position: top;
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 .topnavbar ul {
     list-style-type: none;
@@ -23,9 +25,40 @@ body {
 
 .topnavbar a:hover {
     background-color: black;
-
 }
 
 .topnavbar li {
     float: left;
+}
+
+.projectsdropdown {
+    width: auto;
+    background: rgb(39, 39, 39);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+
+.topnavbar li:hover  ul.projectsdropdown {
+    display:block;
+}
+
+
+#homepageprojects {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#homepageprojects video {
+    display: block;
+    margin: 0 auto;
+}
+
+#homepageprojects a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    padding: 15px;
+    text-align: center;
 }
