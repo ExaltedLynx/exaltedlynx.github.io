@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
+/* Style for navigation bar */
 .topnavbar ul {
     list-style-type: none;
     background-color: rgb(39, 39, 39);
@@ -39,20 +39,20 @@ body {
     display: none;
 }
 
-
 .topnavbar li:hover  ul.projectsdropdown {
-    display:block;
+    display:grid;
 }
 
-
+/* Style for videos and hyperlinks in home page */
 #homepageprojects {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 3%;
 }
 
 #homepageprojects video {
     display: block;
     margin: 0 auto;
+    max-width: 50%;
+    height: auto;
 }
 
 #homepageprojects a {
@@ -61,4 +61,61 @@ body {
     text-decoration: underline;
     padding: 15px;
     text-align: center;
+    font-size: 25px;
+}
+
+/* Style for home page header */
+#homeheader {
+    color: whitesmoke;
+    padding-left: 10px;
+}
+
+/* Style for dividers*/
+.divider {
+    width: 80%;
+}
+
+/* Style for header in project pages */
+.projectheader {
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1em;
+}
+
+.projectheader h2 {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+/* Style for text in project pages*/
+.projectbody {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+}
+
+
+.projecttext {
+    background: rgb(63, 63, 63);
+    padding: 10px;
+    color: whitesmoke;
+    max-width: 45%;
+}
+
+.projecttext ul {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.projecttext a{
+    color: rgb(72, 134, 184);
+}
+
+#projectvideo {
+    margin-left: 40px;
+    max-width: 50%;
+    height: auto;
+    float: right;
+
 }
