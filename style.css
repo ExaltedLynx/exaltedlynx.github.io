@@ -43,6 +43,16 @@ body {
     display:grid;
 }
 
+.offset {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.offset + main {
+    padding-top: 60px;
+}
+
 /* Style for videos and hyperlinks in home page */
 #homepageprojects {
     margin-bottom: 3%;

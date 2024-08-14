@@ -33,5 +33,20 @@
         <h3>About Page</h3>
     </main>
 
+    <script>
+        window.onscroll = function() {scrollNavbar()};
+        var navbarList = document.getElementsByClassName("topnavbar");
+        var navbar = navbarList.item(0);
+        var offset = navbar.offsetTop;
+        
+        function scrollNavbar() 
+        {
+            if(window.scrollY >= offset)
+                navbar.classList.add("offset");
+            else
+                navbar.classList.remove("offset");
+        }
+    </script>
+
 </body>
 </html>
