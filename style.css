@@ -6,6 +6,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.topnavbar  {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 /* Style for navigation bar */
 .topnavbar ul {
     list-style-type: none;
@@ -35,16 +41,27 @@ body {
     width: auto;
     background: rgb(39, 39, 39);
     position: absolute;
-    z-index: 999;
+    
     display: none;
 }
 
 .topnavbar li:hover  ul.projectsdropdown {
-    display:grid;
+    display:inline-flex;
+    flex-direction: column;
 }
 
-.topnavbar .profilelink {
+.topnavbar .profilelinks {
+    display: flex;
+    padding: 12px;
     float: right;
+}
+
+.topnavbar .link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-left: 20px;
 }
 
 .offset {
@@ -59,24 +76,24 @@ body {
 
 /* Style for videos and hyperlinks in home page */
 #homepageprojects {
-    margin-bottom: 3%;
+    margin: 20px 20px;
 }
 
 #homepageprojects video {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     max-width: 50%;
     height: auto;
 }
 
 #homepageprojects a {
     display: block;
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 15px;
     color: white;
-    padding: 15px;
     text-align: center;
     font-size: 25px;
-    font-weight: bold;
-    font-family: 'Calibri', sans-serif;
 }
 
 /* Style for home page header */
@@ -85,9 +102,14 @@ body {
     padding-left: 10px;
 }
 
+#homeheader .careersubtext {
+    font-weight: bold;
+}
+
 /* Style for dividers*/
 .divider {
     width: 80%;
+    color: whitesmoke;
 }
 
 /* Style for header in project pages */
@@ -111,13 +133,14 @@ body {
 }
 
 #aboutdesc {
-    background: rgb(63, 63, 63);
+    background: rgb(30, 30, 30);
     padding: 10px;
     color: whitesmoke;
     text-align: center;
-    font-size: 16px;
-    margin-left: 28%;
-    margin-right: 28%;
+    font-size: 18px;
+    margin-left: 36%;
+    margin-right: 36%;
+    line-height: 1.6em;
 }
 
 /* Style for text in project pages*/
@@ -125,15 +148,36 @@ body {
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 50px;
     line-height: 1.5em;
 }
 
 
 .projecttext {
-    background: rgb(63, 63, 63);
+    background: rgb(30, 30, 30);
     padding: 12px;
     color: whitesmoke;
     max-width: 45%;
+}
+
+.textheader {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.textlist {
+    margin-top: 0;
+}
+
+.textlist li {
+    padding-bottom: 3px;
+}
+
+.additionalprojectinfo {
+    background: rgb(30, 30, 30);
+    padding: 12px;
+    color: whitesmoke;
+    margin-top: 20px;
 }
 
 .projecttext ul {
@@ -149,12 +193,82 @@ body {
     text-align: left;
     text-indent: 3%;
     margin-top: 0%;
+    line-height: 1.6em;
+}
+
+.videocarousel {
+    position: relative;
+    max-width: 50%;
+    float: right;
+}
+
+.carousel_item {
+    padding: 1em;
+    padding-top: 0;
+    display: none;
+}
+
+.carousel_item--selected {
+    display: block;
+}
+
+.carousel_item--selected video {
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+.carousel_item--selected small {
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.carousel_nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel_button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel_button_prev {
+    top: 50%;
+    right: 100%;
+    position: absolute;
+    display: flex;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgba(255, 255, 255);
+    position: absolute;
+    cursor: pointer;
+}
+
+.carousel_button_next {
+    top: 50%;
+    left: 100%;
+    position: absolute;
+    display: flex;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(255, 255, 255);
+    cursor: pointer;
+}
+
+.carousel_button--selected {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 #projectvideo {
     margin-left: 40px;
     max-width: 50%;
-    height: auto;
     float: right;
-
+    border: 2px solid white;
 }
