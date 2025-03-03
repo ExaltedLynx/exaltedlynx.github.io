@@ -180,6 +180,10 @@ body {
     margin-top: 20px;
 }
 
+.additionalprojectinfo a {
+    color: rgb(72, 134, 184);
+}
+
 .projecttext ul {
     margin: 0px;
     padding-bottom: 10px;

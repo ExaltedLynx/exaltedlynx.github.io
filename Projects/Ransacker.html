@@ -98,6 +98,36 @@
                     <br>
                     <a href="https://exaltedlynx.itch.io/ransacker-prototype">Play on itch.io</a>
             </div>
+
+            <div class = "additionalprojectinfo">
+                <p class = "textheader">Implementation: Inventory and Hotbar</p>
+
+                <ul class = "textlist">
+                    <li>
+                        The inventories in Ransacker consist of 4 scripts, an implementation of 
+                        <a href="https://github.com/ExaltedLynx/Ransacker-Prototype/blob/main/Assets/Scripts/GridInventory/InventoryGrid.cs">InventoryGrid</a> 
+                        along with <a href="https://github.com/ExaltedLynx/Ransacker-Prototype/blob/main/Assets/Scripts/GridInventory/InventoryController.cs">InventoryController</a>, 
+                        <a href="https://github.com/ExaltedLynx/Ransacker-Prototype/blob/main/Assets/Scripts/GridInventory/GridInteract.cs">GridInteract</a>,
+                        and <a href="https://github.com/ExaltedLynx/Ransacker-Prototype/blob/main/Assets/Scripts/GridInventory/InventoryHighlight.cs">InventoryHighlight.</a>
+                    </li>
+                    <li>
+                        InventoryGrid is the base script for all the inventories in the game handling placing/inserting and removing items. The inventory is stored as a 2D array
+                        where the x, y positions an item takes up are the indexes of where that item is in the array.
+                    </li>
+
+                    <li>
+                        InventoryController handles the mouse inputs and logic for picking up and placing items as well as when to highlight hovered items.
+                    </li>
+
+                    <li>
+                        GridInteract handles setting which inventory the player is currently hovering using a collider.
+                    </li>
+                    
+                    <li>
+                        InventoryHighlight handles the item highlighter game object, containing functions to change it's size, position, and visibility
+                    </li>
+                </ul>
+            </div>
             
             <div class = "additionalprojectinfo">
                 <p class = "textheader">Obstacles:</p>
