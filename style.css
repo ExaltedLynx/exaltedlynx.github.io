@@ -41,7 +41,6 @@ body {
     width: auto;
     background: rgb(39, 39, 39);
     position: absolute;
-    
     display: none;
 }
 
@@ -138,8 +137,8 @@ body {
     color: whitesmoke;
     text-align: center;
     font-size: 18px;
-    margin-left: 36%;
-    margin-right: 36%;
+    margin-left: 28%;
+    margin-right: 28%;
     line-height: 1.6em;
 }
 
@@ -161,33 +160,34 @@ body {
 }
 
 .textheader {
-    margin-bottom: 5px;
-    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .textlist {
-    margin-top: 0;
+    margin: 0px;
+    padding: 1em 1em 10px;
 }
 
 .textlist li {
-    padding-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 .additionalprojectinfo {
     background: rgb(30, 30, 30);
     padding: 12px;
     color: whitesmoke;
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .additionalprojectinfo a {
     color: rgb(72, 134, 184);
 }
 
-.projecttext ul {
-    margin: 0px;
-    padding-bottom: 10px;
-}
 
 .projecttext a{
     color: rgb(72, 134, 184);
@@ -195,9 +195,13 @@ body {
 
 .projectreflection {
     text-align: left;
-    text-indent: 3%;
     margin-top: 0%;
     line-height: 1.6em;
+}
+
+.projectreflection p {
+    text-indent: 3%;
+    margin-top: 0.4em;
 }
 
 .videocarousel {
